@@ -13,5 +13,5 @@ You can use BingGPT AI API on Python!
 <img src="pic/pic1.png" />
 <img src="pic/pic2.png" />
 <h1>Example</h1>
-<a href="example.py">Example Code</a>
-<br><a href="example2.py">Example Code 2</a>
+<a href="examples/example.py">Example Code</a>
+<br><a href="examples/example2.py">Example Code 2</a>
