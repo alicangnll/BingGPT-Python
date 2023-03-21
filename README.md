@@ -8,7 +8,7 @@ You can use BingGPT AI API on Python!
 <ul>
   <li>pip install -r requirements.txt</li>
   <li>pip install dist/binggpt-0.0.10-py3-none-any.whl</li>
-</ul>,
+</ul>
 <h1>Pictures</h1>
 <img src="pic/pic1.png" />
 <h1>Example</h1>
