@@ -10,7 +10,6 @@ if __name__ == "__main__":
     # OR
     # - Export your cookies as Netscape
     # - Write your cookies inside of cookies.txt
-    # pip install cookielib
     # import cookielib
     # cookies = cookielib.MozillaCookieJar('cookies.txt')
     # cookies.load()
