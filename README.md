@@ -1,5 +1,5 @@
-# BingGPT - Bing API on Python
-You can use BingGPT API on Python!
+# BingGPT - Bing AI API on Python
+You can use BingGPT AI API on Python!
 # Requirements
 <ul>
   <li>Python 3.8+</li>
