@@ -10,6 +10,5 @@ You can use BingGPT API on Python!
   <li>pip install dist/binggpt-0.0.10-py3-none-any.whl</li>
 </ul>
 <h1>Example</h1>
-<br>
-<a href="example.py">Example Code</a>
-<a href="example2.py">Example Code</a>
+<br><a href="example.py">Example Code</a>
+<br><a href="example2.py">Example Code 2</a>
