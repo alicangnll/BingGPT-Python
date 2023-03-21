@@ -1,0 +1,5 @@
+asyncio
+uuid
+certifi
+requests
+websockets
