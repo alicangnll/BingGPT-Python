@@ -2,6 +2,18 @@ import BingPython as ai
 import asyncio
 
 if __name__ == "__main__":
+    # Cookies
+    # You can get with Cookie Editor
+    # - Enter to https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx
+    # - Open cookie editor
+    # - Write your cookie
+    # OR
+    # - Export your cookies as Netscape
+    # - Write your cookies inside of cookies.txt
+    # pip install cookielib
+    # import cookielib
+    # cookies = cookielib.MozillaCookieJar('cookies.txt')
+    # cookies.load()
     cookies = {
         'MUID': '',
         'BCP': '',
