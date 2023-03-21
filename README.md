@@ -12,3 +12,4 @@ You can use BingGPT API on Python!
 <h1>Example</h1>
 <br>
 <a href="example.py">Example Code</a>
+<a href="example2.py">Example Code</a>
