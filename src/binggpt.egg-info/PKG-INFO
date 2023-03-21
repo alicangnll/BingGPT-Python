@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: binggpt
+Version: 0.0.10
+Summary: Bing AI Chat API
+Home-page: https://github.com/alicangnll/BingGPT
+Author: Ali Can Gönüllü
+Author-email: alicangonullu@yahoo.com
+License: GNU General Public License v2.0
+Project-URL: Bug Report, https://github.com/alicangnll/BingGPT/issues/new
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# BingGPT - Bing API on Python
+You can use BingGPT API on Python!
+# Requirements
+<ul>
+<li>Python 3.8+</li>
+</ul>
+<h1> Installation</h1>
+<ul>
+<li>pip install -r requirements.txt</li>
+</ul>
