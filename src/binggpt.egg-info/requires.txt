@@ -1,6 +1,0 @@
-asyncio
-requests
-websockets
-rich
-certifi
-uuid
