@@ -37,6 +37,11 @@ class BingPython:
         response = requests.get('https://www.bing.com/turing/conversation/create', cookies=cookie, headers=header)
         return response.text
 
+    def ayikla(string):
+        string = str(string).lower()
+        string = str(string).replace("?", "")
+        return str(string)
+    
     async def sendcom(loaddata, question):
         # JSON Load
         js1 = json.loads(loaddata)
@@ -78,7 +83,7 @@ class BingPython:
                 await wsscon.recv()
                 await wsscon.send('{"type":6}')
                 await wsscon.recv()
-                await wsscon.send('{"arguments":[{"source":"cib","optionsSets":["nlu_direct_response_filter","deepleo","disable_emoji_spoken_text","responsible_ai_policy_235","enablemm","harmonyv3","glpromptv1","cachewriteext","e2ecachewrite","dv3sugg"],"allowedMessageTypes":["Chat","InternalSearchQuery","InternalSearchResult","Disengaged","InternalLoaderMessage","RenderCardRequest","AdsQuery","SemanticSerp","GenerateContentQuery","SearchQuery"],"sliceIds":["creatorv2c","semserpbptf2","perfinstcf","sydperfinput","314sdprc","314sdprc","0310wlthrots0","prod114cf","317glpmtv1","316e2ecache"],"traceId":"6419870a6e6845039712f7e579452595","isStartOfSession":true,"message":{"locale":"tr-TR","market":"tr-TR","region":"TR","location":"lat:47.639557;long:-122.128159;re=1000m;","locationHints":[{"Center":{"Latitude":40,"Longitude":28},"RegionType":2,"SourceType":11},{"country":"Turkey","state":"Bursa","city":"Mudanya","zipcode":"16970","timezoneoffset":3,"countryConfidence":8,"cityConfidence":5,"Center":{"Latitude":40,"Longitude":28},"RegionType":2,"SourceType":1}],"timestamp":"2023-03-21T13:29:34+03:00","author":"user","inputMethod":"Keyboard","text":"' + str(question).lower() + '","messageType":"Chat"},"conversationSignature":"' + str(js1["conversationSignature"]) + '","participant":{"id":"' + str(js1["clientId"]) + '"},"conversationId":"' + str(js1["conversationId"]) + '"}],"invocationId":"0","target":"chat","type":4}')
+                await wsscon.send('{"arguments":[{"source":"cib","optionsSets":["nlu_direct_response_filter","deepleo","disable_emoji_spoken_text","responsible_ai_policy_235","enablemm","harmonyv3","glpromptv1","cachewriteext","e2ecachewrite","dv3sugg"],"allowedMessageTypes":["Chat","InternalSearchQuery","InternalSearchResult","Disengaged","InternalLoaderMessage","RenderCardRequest","AdsQuery","SemanticSerp","GenerateContentQuery","SearchQuery"],"sliceIds":["creatorv2c","semserpbptf2","perfinstcf","sydperfinput","314sdprc","314sdprc","0310wlthrots0","prod114cf","317glpmtv1","316e2ecache"],"traceId":"6419870a6e6845039712f7e579452595","isStartOfSession":true,"message":{"locale":"tr-TR","market":"tr-TR","region":"TR","location":"lat:47.639557;long:-122.128159;re=1000m;","locationHints":[{"Center":{"Latitude":40,"Longitude":28},"RegionType":2,"SourceType":11},{"country":"Turkey","state":"Bursa","city":"Mudanya","zipcode":"16970","timezoneoffset":3,"countryConfidence":8,"cityConfidence":5,"Center":{"Latitude":40,"Longitude":28},"RegionType":2,"SourceType":1}],"timestamp":"2023-03-21T13:29:34+03:00","author":"user","inputMethod":"Keyboard","text":"' + BingPython.ayikla(question) + '","messageType":"Chat"},"conversationSignature":"' + str(js1["conversationSignature"]) + '","participant":{"id":"' + str(js1["clientId"]) + '"},"conversationId":"' + str(js1["conversationId"]) + '"}],"invocationId":"0","target":"chat","type":4}')
             except(websockets.exceptions.ConnectionClosedError):
                 return "WebSocket ConnectionClosedError! - TERMINATED!"
             final = False
