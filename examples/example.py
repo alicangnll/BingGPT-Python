@@ -39,5 +39,5 @@ if __name__ == "__main__":
         }
     
     ask = input("Ask your question : ")
-    command = ai.BingPython.sendcom(ai.BingPython.CreateSession(cookies), ask, 1) # "1" meaning is Creative answers
+    command = ai.BingPython.sendcom(ai.BingPython.CreateSession(cookies), ask)
     print(asyncio.get_event_loop().run_until_complete(command))
