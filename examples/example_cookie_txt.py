@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # import cookielib
     # cookies = cookielib.MozillaCookieJar('cookies.txt')
     # cookies.load()
-    cookies = cookielib.MozillaCookieJar('cookies.txt')
+    cookies = cookielib.MozillaCookieJar('cookie.txt')
     cookies.load()
     ask = input("Ask your question : ")
     command = ai.BingPython.sendcom(ai.BingPython.CreateSession(cookies), ask)
