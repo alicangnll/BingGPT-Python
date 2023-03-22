@@ -2,16 +2,16 @@ from setuptools import find_packages
 from setuptools import setup
 
 setup(
-    name="binggpt",
-    version="0.0.10",
+    name="bingpython",
+    version="0.0.19",
     license="GNU General Public License v2.0",
     author="Ali Can Gönüllü",
     author_email="alicangonullu@yahoo.com",
     description="Bing AI Chat API",
     packages=find_packages("src"),
     package_dir={"": "src"},
-    url="https://github.com/alicangnll/BingGPT",
-    project_urls={"Bug Report": "https://github.com/alicangnll/BingGPT/issues/new"},
+    url="https://github.com/alicangnll/BingGPT-Python",
+    project_urls={"Bug Report": "https://github.com/alicangnll/BingGPT-Python/issues/new"},
     install_requires=[
         "asyncio",
         "requests",

@@ -1,6 +1,6 @@
 asyncio
-uuid
-certifi
 requests
 websockets
-cookielib
+rich
+certifi
+uuid

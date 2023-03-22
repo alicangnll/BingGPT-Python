@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/BingPython.py
+src/bingpython.egg-info/PKG-INFO
+src/bingpython.egg-info/SOURCES.txt
+src/bingpython.egg-info/dependency_links.txt
+src/bingpython.egg-info/requires.txt
+src/bingpython.egg-info/top_level.txt
