@@ -1,6 +1,10 @@
 import BingPython as ai
 import asyncio
-import http.cookiejar as cookielib
+try:
+    import cookielib
+except:
+    import http.cookiejar
+    cookielib = http.cookiejar
 
 if __name__ == "__main__":
     # Cookies
