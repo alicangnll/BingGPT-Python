@@ -3,4 +3,3 @@ uuid
 certifi
 requests
 websockets
-cookielib
