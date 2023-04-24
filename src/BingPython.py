@@ -49,7 +49,7 @@ class BingPython:
             print('--- Connection are under control. Loading... ---')
             await asyncio.sleep(5)
 
-    async def sendcom(loaddata, question):
+    async def sendcom_sydney(loaddata, question):
         # JSON Load
         js1 = json.loads(loaddata)
 
