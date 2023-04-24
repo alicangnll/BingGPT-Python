@@ -44,5 +44,5 @@ if __name__ == "__main__":
     }
 
     ask = input("Ask your question : ")
-    command = ai.BingPython.sendcom(ai.BingPython.CreateSession(cookies), ask)
+    command = ai.BingPython.sendcom_sydney(ai.BingPython.CreateSession(cookies), ask)
     print(asyncio.get_event_loop().run_until_complete(command))
