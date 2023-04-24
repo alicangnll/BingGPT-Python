@@ -22,26 +22,27 @@ if __name__ == "__main__":
         'BCP': '',
         'MUIDB': '',
         'USRLOC': '',
-        'SRCHD': '',
-        'SRCHUID': '',
+        'SRCHD': 'AF=hpcodx',
+        'MMCASM': '',
+        '_UR': '',
         'ANON': '',
         'NAP': '',
-        'PPLState': '',
+        'ABDEF': '',
+        'PPLState': '1',
         'KievRPSSecAuth': '',
         '_U': '',
-        'WLID': '',
         'SUID': '',
         '_EDGE_S': '',
         'WLS': '',
+        '_HPVN': '',
         '_SS': '',
         '_clck': '',
-        '_clsk': '',
         'SRCHUSR': '',
         '_RwBf': '',
         'SRCHHPGUSR': '',
         'ipv6': '',
-        }
-    
+    }
+
     ask = input("Ask your question : ")
     command = ai.BingPython.sendcom(ai.BingPython.CreateSession(cookies), ask)
     print(asyncio.get_event_loop().run_until_complete(command))
